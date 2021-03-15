@@ -56,13 +56,13 @@ Using TensorFlow, we have been tasked to optimize the initial model from Deliver
 
 ![OptimizedModel_Attempt2_Result](https://github.com/Lora-Borja/Neural_Network_Charity_Analysis/blob/main/images/OptimizedModel_Attempt2_Result.PNG)
 
-* Resulting in an accuracy score of 72% (0.7174) - +3% more accurate than the initial model!
+* Resulting in an accuracy score of 72% (0.7174) which is a +3% more accurate than the initial model!
 
 ![OptimizedModel_Attempt2_AccuracyScore](https://github.com/Lora-Borja/Neural_Network_Charity_Analysis/blob/main/images/OptimizedModel_Attempt2_AccuracyScore.PNG)
 
 ### 3rd Attempt
 
-At this point, I have played around with the number of neurons per hidden layer, added more hidden layers & then removed them, and increased/decreased the epoch. What I eventually concluded is that for my final optimization model I will stick to having 2 hidden layers only and use "sigmoid" as my activation functio since no matter how much I change the number of neurons or the epoch my accuracy results varied between 53% at the lowest and 72% as the highest.
+At this point, I have played around with the number of neurons per hidden layer, added more hidden layers & then removed them, and increased/decreased the epoch. What I eventually concluded is that for my final optimization model I will stick to having 2 hidden layers only and use "sigmoid" as my activation function since no matter how much I change the number of neurons or the epoch my accuracy results varied between 53% at the lowest and 72% as the highest.
 
 ![OptimizedModel_Attempt3_Result](https://github.com/Lora-Borja/Neural_Network_Charity_Analysis/blob/main/images/OptimizedModel_Attempt3_Result.PNG)
 
@@ -72,4 +72,12 @@ At this point, I have played around with the number of neurons per hidden layer,
 
 ## Summary
 
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem and explain your recommendation.
+The optimized machine learning model for Alphabet Soup was only able to predict 72% of the outcomes correctly at maximum, a shy of 3% our target accuracy. A few key points learned in the process of optimizing my learning models are:
+
+- Using the sigmoid activation function on the hidden layers increased my chances of the accuracy results closer to the maximum prediction score of 72%; whereas the relu function seemed to give me results in the lower end of the accuracy range.
+
+- The number of neurons per hidden worked best structured in descending order with the highest number on the first layer and the lowest at the last layer prior to the output layer.
+
+- The number of epochs affects the performance of the model and is correlated to the number of neurons. I noticed that the higher I increased the epoch the lower accuracy score I get unless I change the number of neurons in my model. In my observation in attempting to reach a 75% accuracy score, I can set the epoch at any level if I proportionately change the number of neurons per hidden layers.
+
+- I realized that in order to reach the target accuracy of 75% or higher we may need to go back and do the preprocess steps a bit more diligently and study what input variables is truly needed and how it should be transformed before optimizing the models. I am sure they may be a better solution to preprocess the dataset, however, I was satisfied with being just 3% short of target prediction. It is a small variance, and 72% accuracy is sufficient to assume that the model's predictions to identify which organizations are worth the donations and which ones are high risks is accurate.
