@@ -35,7 +35,7 @@ Using TensorFlow, we have been tasked to optimize the initial model from Deliver
 
 #### Compiling, Training, and Evaluating the Model
 
-#### Initial Model
+### Initial Model
 * Hidden Layer 1 with 80 neurons and activation function at "relu"
 * Hidden Layer 2 with 30 neurons and activation function at "relu"
 * Output Layer with activation function at "sigmoid"
@@ -44,23 +44,25 @@ Using TensorFlow, we have been tasked to optimize the initial model from Deliver
 
 ![OriginalModel_AccuracyScore](https://github.com/Lora-Borja/Neural_Network_Charity_Analysis/blob/main/images/OriginalModel_AccuracyScore.PNG)
 
-#### 1st Attempt
+### 1st Attempt
 
 ![OptimizedModel_Attempt1_Result](https://github.com/Lora-Borja/Neural_Network_Charity_Analysis/blob/main/images/OptimizedModel_Attempt1_Result.PNG)
 
-* Resulting in an accuracy score of 69% (0.6924) - just a tiny bit lower than the initial model!
+* Resulting in an accuracy score of 69% (0.6924) - just a tiny bit higher than the initial model!
 
 ![OptimizedModel_Attempt1_AccuracyScore](https://github.com/Lora-Borja/Neural_Network_Charity_Analysis/blob/main/images/OptimizedModel_Attempt1_AccuracyScore.PNG)
 
-#### 2nd Attempt
+### 2nd Attempt
 
 ![OptimizedModel_Attempt2_Result](https://github.com/Lora-Borja/Neural_Network_Charity_Analysis/blob/main/images/OptimizedModel_Attempt2_Result.PNG)
 
-* Resulting in an accuracy score of 72% (0.7174)
+* Resulting in an accuracy score of 72% (0.7174) - +3% more accurate than the initial model!
 
 ![OptimizedModel_Attempt2_AccuracyScore](https://github.com/Lora-Borja/Neural_Network_Charity_Analysis/blob/main/images/OptimizedModel_Attempt2_AccuracyScore.PNG)
 
-#### 3rd Attempt
+### 3rd Attempt
+
+At this point, I have played around with the number of neurons per hidden layer, added more hidden layers & then removed them, and increased/decreased the epoch. What I eventually concluded is that for my final optimization model I will stick to having 2 hidden layers only and use "sigmoid" as my activation functio since no matter how much I change the number of neurons or the epoch my accuracy results varied between 53% at the lowest and 72% as the highest.
 
 ![OptimizedModel_Attempt3_Result](https://github.com/Lora-Borja/Neural_Network_Charity_Analysis/blob/main/images/OptimizedModel_Attempt3_Result.PNG)
 
