@@ -10,26 +10,26 @@ With machine learning and neural networks, we use the features in the provided d
 
 #### Data Preprocessing
 
-In the initial model, two variables were removed from the input data: EIN and NAME. These two variables are identification columns. Having them in the dataset creates too much noise, especially with the amount of organization names being many and it will not allow the machine learning to be flexible in case we are to repurpose the model with new dataset containing new organization names.
+In the initial model, two variables were removed from the input data: EIN and NAME. These two variables are identification columns. Having them in the dataset creates too much noise, especially with the amount of organization names being many and it will not allow the machine learning to be flexible in case we are to repurpose the model if by chance we are given the same but updated dataset containing new organization names on the list.
 
-In the optimized model, additional variables were dropped from the DataFrame due to its lack of contributions as a feature to the main analysis goal. We want to be able to narrow the prediction of successful applicants and identify the ones that are high risks. These dropped variables are non-beneficial as we should only need to know the application type of each recipient, what sector of the industry are they affiliated to, the government classification and organization they belong to, and their use case for funding. Below is a breakdown of the variables.
+In the optimized model, additional variables were dropped from the DataFrame due to its lack of contributions as a feature to the main analysis goal. We want to be able to narrow the prediction of successful applicants and identify the ones that are high risks. These dropped variables are non-beneficial as we should only need to know the application type of each recipient, what sector of the industry are they affiliated to, the government classification and/or organization they belong to, and their use case for the funding. Below is a breakdown of the variables.
 
-* Target Variable:
-IS_SUCCESSFUL - this is the variable that identifies whether the money was used effectively.
+##### Target Variable:
+* IS_SUCCESSFUL - this is the variable that identifies whether the money was used effectively.
 
-* Feature Variables that has been placed in category bins:
-APPLICATION_TYPE - this is Alphabet Soup's classification of application type.
-AFFILIATION - identifies the sector of the industry whether they are independent, company sponsored, or other.
-CLASSIFICATION - relates to government organization classification.
-USE_CASE - use for the funding whether its for preservation, product development, community service, or other
-ORGANIZATION - types of organization they belong to whether trust, association, or other.
+##### Feature Variables that has been placed in category bins:
+* APPLICATION_TYPE - this is Alphabet Soup's classification of application type.
+* AFFILIATION - identifies the sector of the industry whether they are independent, company sponsored, or other.
+* CLASSIFICATION - relates to government organization classification.
+* USE_CASE - use for the funding whether its for preservation, product development, community service, or other
+* ORGANIZATION - types of organization they belong to whether trust, association, or other.
 
-* Dropped Variables:
-EIN and NAME - are the identification columns.
-STATUS - just shows either active or not.
-INCOME_AMT - is an income classification.
-SPECIAL_CONSIDERATIONS - indicates if special consideration is needed for application.
-ASK_AMT - is the funding amount requested.
+##### Dropped Variables:
+* EIN and NAME - are the identification columns.
+* STATUS - just shows either active or not.
+* INCOME_AMT - is an income classification.
+* SPECIAL_CONSIDERATIONS - indicates if special consideration is needed for application.
+* ASK_AMT - is the funding amount requested.
 
 Using TensorFlow, we have been tasked to optimize the original model in order to achieve a target predictive accuracy higher than 75%. However, I was unable to achieve an accuracy higher than 75%. I made many efforts and provided below are the top three model attempts I had performed.
 
