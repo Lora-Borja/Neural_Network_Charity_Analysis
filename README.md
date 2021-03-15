@@ -76,7 +76,7 @@ The optimized machine learning model for Alphabet Soup was only able to predict 
 
 - Using the sigmoid activation function on the hidden layers increased my chances of the accuracy results closer to the maximum prediction score of 72%; whereas the relu function seemed to give me results in the lower end of the accuracy range.
 
-- The number of neurons per hidden worked best structured in descending order with the highest number on the first layer and the lowest at the last layer prior to the output layer.
+- The number of neurons per hidden layer worked best structured in descending order with the highest number on the first layer and the lowest at the last layer prior to the output layer.
 
 - The number of epochs affects the performance of the model and is correlated to the number of neurons. I noticed that the higher I increased the epoch the lower accuracy score I get unless I change the number of neurons in my model. In my observation in attempting to reach a 75% accuracy score, I can set the epoch at any level if I proportionately change the number of neurons per hidden layers.
 
