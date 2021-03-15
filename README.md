@@ -21,7 +21,7 @@ In the optimized model, additional variables were dropped from the DataFrame due
 * APPLICATION_TYPE - this is Alphabet Soup's classification of application type.
 * AFFILIATION - identifies the sector of the industry whether they are independent, company sponsored, or other.
 * CLASSIFICATION - relates to government organization classification.
-* USE_CASE - use for the funding whether its for preservation, product development, community service, or other
+* USE_CASE - use for the funding whether its for preservation, product development, community service, or other.
 * ORGANIZATION - types of organization they belong to whether trust, association, or other.
 
 ##### Dropped Variables:
@@ -31,11 +31,11 @@ In the optimized model, additional variables were dropped from the DataFrame due
 * SPECIAL_CONSIDERATIONS - indicates if special consideration is needed for application.
 * ASK_AMT - is the funding amount requested.
 
-Using TensorFlow, we have been tasked to optimize the original model in order to achieve a target predictive accuracy higher than 75%. However, I was unable to achieve an accuracy higher than 75%. I made many efforts and provided below are the top three model attempts I had performed.
+Using TensorFlow, we have been tasked to optimize the initial model from Deliverable 1 & 2 in order to achieve a target predictive accuracy higher than 75%. However, I was unable to achieve an accuracy higher than 75%. I made many efforts and provided below are the top three model attempts I had performed.
 
 #### Compiling, Training, and Evaluating the Model
 
-Initial Model
+#### Initial Model
 * Hidden Layer 1 with 80 neurons and activation function at "relu"
 * Hidden Layer 2 with 30 neurons and activation function at "relu"
 * Output Layer with activation function at "sigmoid"
@@ -44,7 +44,7 @@ Initial Model
 
 ![OriginalModel_AccuracyScore](https://github.com/Lora-Borja/Neural_Network_Charity_Analysis/blob/main/images/OriginalModel_AccuracyScore.PNG)
 
-##### 1st Attempt
+#### 1st Attempt
 
 ![OptimizedModel_Attempt1_Result](https://github.com/Lora-Borja/Neural_Network_Charity_Analysis/blob/main/images/OptimizedModel_Attempt1_Result.PNG)
 
@@ -52,7 +52,7 @@ Initial Model
 
 ![OptimizedModel_Attempt1_AccuracyScore](https://github.com/Lora-Borja/Neural_Network_Charity_Analysis/blob/main/images/OptimizedModel_Attempt1_AccuracyScore.PNG)
 
-##### 2nd Attempt
+#### 2nd Attempt
 
 ![OptimizedModel_Attempt2_Result](https://github.com/Lora-Borja/Neural_Network_Charity_Analysis/blob/main/images/OptimizedModel_Attempt2_Result.PNG)
 
@@ -60,7 +60,7 @@ Initial Model
 
 ![OptimizedModel_Attempt2_AccuracyScore](https://github.com/Lora-Borja/Neural_Network_Charity_Analysis/blob/main/images/OptimizedModel_Attempt2_AccuracyScore.PNG)
 
-##### 3rd Attempt
+#### 3rd Attempt
 
 ![OptimizedModel_Attempt3_Result](https://github.com/Lora-Borja/Neural_Network_Charity_Analysis/blob/main/images/OptimizedModel_Attempt3_Result.PNG)
 
